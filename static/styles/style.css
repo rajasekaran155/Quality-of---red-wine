@@ -5,8 +5,7 @@
   outline: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-   box-sizing: border-box;
-  margin:10px;
+  box-sizing: border-box;
 }
 body{
   display: flex;
@@ -70,13 +69,24 @@ body{
 .container { 
   height: 200px;
   position: relative;
+
 }
 
-.center {
+.vertical-center {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
