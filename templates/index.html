@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Quality of red wine</title>
+      <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}"/>
+   </head>
+   <body>
+   <form  action="/predict" method="post">
+      <div class="wrapper">
+         <div class="input-data">
+            <input type="text" required name="Fixed acidity">
+            <div class="underline"></div>
+            <label>Fixed acidity[4.60,15.90]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required name="Volatile acidity">
+            <div class="underline"></div>
+            <label>Volatile acidity[0.12,1.58]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required name="Citric acid">
+            <div class="underline"></div>
+            <label>Citric acid[0.00,1.00]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required name="Residual sugar">
+            <div class="underline"></div>
+            <label>Residual sugar[0.90,15.50]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required name="Chlorides">
+            <div class="underline"></div>
+            <label>Chlorides[0.01,0.61]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required name="Free sulfur dioxide">
+            <div class="underline"></div>
+            <label>Free sulfur dioxide[1.00,72.00]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required name="Total sulfur dioxide">
+            <div class="underline"></div>
+            <label>Total sulfur dioxide[6.00,289.00]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required name="Density">
+            <div class="underline"></div>
+            <label>Density[0.99,1.00]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required  name="pH">
+            <div class="underline"></div>
+            <label>pH[2.74,4.01]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required name="Sulphates">
+            <div class="underline"></div>
+            <label>Sulphates[0.33,2.00]</label>
+         </div>
+         <br>
+         <div class="input-data">
+            <input type="text" required name="Alcohol">
+            <div class="underline"></div>
+            <label>Alcohol[8.40,14.90]</label>
+         </div>
+      </div>
+      <div class="container">
+         <div class="vertical-center">
+           <button>Predict!</button>
+         </div>
+       </div>
+   </form>
+   </body>
+</html>
