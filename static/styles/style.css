@@ -5,7 +5,6 @@
   outline: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
 }
 body{
   display: flex;
@@ -69,7 +68,6 @@ body{
 .container { 
   height: 200px;
   position: relative;
-
 }
 
 .vertical-center {
@@ -80,13 +78,12 @@ body{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 992px) {
-  .column {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+@media only screen and (max-width: 500px) {
+  body {
+    display: flex;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+    align-items: flex-start;
   }
 }
